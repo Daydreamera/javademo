@@ -1,10 +1,11 @@
+package binarysearch;
+
 /**
  * 二分查找
  * 传入的数组默认有序
  */
 
 public class BinarySearchTest {
-
 
     // 方式一：不使用递归
     public static int search(int[] nums, int target) {
@@ -13,7 +14,7 @@ public class BinarySearchTest {
          * @param target    目标值
          * @return
          */
-        int left = 0, right = nums.length - 1, mid = 0;
+        int left = 0, right = nums.length - 1, mid;
         while (left <= right) {
             mid = (left + right) / 2;
             if (target == nums[mid]) {
