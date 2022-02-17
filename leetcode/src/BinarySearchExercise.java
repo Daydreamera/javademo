@@ -8,25 +8,21 @@ public class BinarySearchExercise {
     public static final int BAD_VERSION = 1702766719;
 
     public static boolean isBadVersion(long n) {
-        if (n >= BAD_VERSION) {
-            return true;
-        } else {
-            return false;
-        }
+        return n >= BAD_VERSION;
     }
     public static long firstBadVersion(int n) {
-        long left = 0, right = n;
-        long badVersion = 0;
+        int left = 0, right = n;
+        int badVersion;
         while (left <= right) {
             badVersion = left + (right - left) / 2;     // 防止整型溢出
-            if (isBadVersion(badVersion) == true) {
-                if (isBadVersion(badVersion - 1) == true) {
+            if (isBadVersion(badVersion)) {
+                if (isBadVersion(badVersion - 1)) {
                     right = badVersion - 2;
                 } else {
                     return badVersion;
                 }
             } else {
-                if (isBadVersion(badVersion + 1) == true) {
+                if (isBadVersion(badVersion + 1)) {
                     return badVersion + 1;
                 } else {
                     left = badVersion + 2;
