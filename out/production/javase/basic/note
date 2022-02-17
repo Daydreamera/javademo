@@ -1,0 +1,12 @@
+局部变量需要先赋值、后使用
+
+基本数据类型：
+	数值型：
+		整数类型：byte、short、int、long
+		浮点类型：float、double
+	字符类型：char
+	布尔类型：boolean
+引用数据类型：
+	类：class(包括String)
+	接口：interface
+	数组：[]

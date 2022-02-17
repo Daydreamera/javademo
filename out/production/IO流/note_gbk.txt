@@ -1,0 +1,25 @@
+本机IP：172.20.8.130
+
+
+1978
+Oracle官网账号
+	1764052725@qq.com
+	Datayes@123
+
+talend-mysql组件参数：
+useUnicode=true&characterEncoding=utf8&noDatetimeStringSync=true
+
+缓冲区：
+	先将数据流写入内存，达到缓冲区上限后一次性写入磁盘。
+	类似于数据库中的批量提交，减少磁盘IO，提高效率
+
+序列化与反序列化：
+	序列化：将内存中的变量变成可存储或可传输的过程
+	反序列化：把变量内容从序列化的对象重新加载到内存中的过程
+	Python模块(cPickle/pickle)：
+		try:
+			import cPickle as pickle
+		except ImportError:
+			import pickle
+
+Python3中 int的范围是无限 取决于内存的大小
