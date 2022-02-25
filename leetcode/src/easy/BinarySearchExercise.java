@@ -1,3 +1,5 @@
+package easy;
+
 public class BinarySearchExercise {
     /**
      * 产品的某个版本出错 由于每个版本都是基于之前的版本开发的，所以错误的版本之后的所有版本都是错的。
