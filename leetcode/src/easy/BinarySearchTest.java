@@ -1,4 +1,4 @@
-package binarysearch;
+package easy;
 
 /**
  * 二分查找
